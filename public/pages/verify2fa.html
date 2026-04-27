@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2FA Verification</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>2FA Verification</h1>
+    <p style="text-align:center;color:#94a3b8;margin-bottom:1rem">
+      Enter the 6-digit code from your authenticator app
+    </p>
+    <div class="form-group">
+      <label>6-Digit Code</label>
+      <input type="text" id="code" placeholder="123456" maxlength="6">
+    </div>
+    <button onclick="verify2FA()">Verify</button>
+    <div id="msg" class="message"></div>
+  </div>
+  <script src="../js/auth.js"></script>
+</body>
+</html>
